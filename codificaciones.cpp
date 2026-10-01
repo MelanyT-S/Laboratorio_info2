@@ -25,24 +25,17 @@ std::string comprimirRLE(const std::string& texto) { //declara y devuelve
 
 std::string descomprimirRLE(const std::string& comprimido) {
     std::string resultado = "";
-    int n = comprimido.length();
-    int i = 0;
+    for (size_t i = 0; i < comprimido.length(); i += 2) {
+        // El primer carácter del par es la cantidad de repeticiones (ej. '1')
+        int cantidad = comprimido[i] - '0';
 
-    while (i < n) {
-        int contador = 0;
-
-        // Extraemos el número
-        while (i < n && std::isdigit(comprimido[i])) {
-            contador = contador * 10 + (comprimido[i] - '0');
-            i++;
-        }
-
-        // Repetimos el carácter tantas veces como indicó el contador
-        if (i < n) {
-            resultado.append(contador, comprimido[i]);
-            i++;
+        // El segundo carácter del par es el símbolo original (ej. '4' o 'm')
+        if (i + 1 < comprimido.length()) {
+            char caracter = comprimido[i + 1];
+            resultado.append(cantidad, caracter);
         }
     }
+
     return resultado;
 }
 

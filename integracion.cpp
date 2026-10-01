@@ -36,6 +36,7 @@ static void escribirArchivo(const std::string& ruta, const std::string& contenid
 bool ejecutarIntegracion(const std::string& rutaOriginal,
                          const std::string& rutaSalida,
                          MetodoCompresion metodo,
+                         int nBits,
                          int claveEncriptacion) {
     try {
 
@@ -74,7 +75,7 @@ bool ejecutarIntegracion(const std::string& rutaOriginal,
         std::string textoEncriptado = "";
         for (char c : textoComprimido) {
             // Se pasan los 3 parámetros: el byte, el desplazamiento n y el carácter K
-            textoEncriptado += encriptarByte(static_cast<unsigned char>(c), claveEncriptacion, 'K');
+            textoEncriptado += encriptarByte(static_cast<unsigned char>(c), nBits, static_cast<unsigned char>(claveEncriptacion));
         }
         // MUESTRA EN PANTALLA EL TEXTO ENCRIPTADO (SE VERÁ COMO SIMBOLOS/GARABATOS)
         std::cout << "      -> Texto Encriptado (en memoria): \"" << textoEncriptado << "\"\n";
@@ -84,7 +85,7 @@ bool ejecutarIntegracion(const std::string& rutaOriginal,
         std::string textoDesencriptado = "";
         for (char c : textoEncriptado) {
             // Se pasan los 3 parámetros en el mismo orden
-            textoDesencriptado += desencriptarByte(static_cast<unsigned char>(c), claveEncriptacion, 'K');
+            textoDesencriptado += desencriptarByte(static_cast<unsigned char>(c), nBits, static_cast<unsigned char>(claveEncriptacion));
         }
         // MUESTRA EN PANTALLA EL TEXTO DESENCRIPTADO (DEBE VOLVER A SER EL COMPRIMIDO)
         std::cout << "      -> Texto Desencriptado: \"" << textoDesencriptado << "\"\n";

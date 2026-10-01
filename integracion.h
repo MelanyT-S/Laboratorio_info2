@@ -14,6 +14,7 @@ enum MetodoCompresion {
 bool ejecutarIntegracion(const std::string& rutaOriginal,
                          const std::string& rutaSalida,
                          MetodoCompresion metodo,
+                         int nBits,
                          int claveEncriptacion);
 
 #endif // INTEGRACION_H
