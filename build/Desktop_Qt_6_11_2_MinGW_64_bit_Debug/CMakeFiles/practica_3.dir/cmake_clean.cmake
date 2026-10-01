@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/practica_3.dir/codificaciones.cpp.obj"
   "CMakeFiles/practica_3.dir/codificaciones.cpp.obj.d"
+  "CMakeFiles/practica_3.dir/integracion.cpp.obj"
+  "CMakeFiles/practica_3.dir/integracion.cpp.obj.d"
   "CMakeFiles/practica_3.dir/main.cpp.obj"
   "CMakeFiles/practica_3.dir/main.cpp.obj.d"
   "libpractica_3.dll.a"

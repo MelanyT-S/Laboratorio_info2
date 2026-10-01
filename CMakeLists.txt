@@ -6,7 +6,8 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(practica_3 main.cpp
-    codificaciones.h codificaciones.cpp)
+    codificaciones.h codificaciones.cpp
+    integracion.h integracion.cpp)
 
 include(GNUInstallDirs)
 install(TARGETS practica_3

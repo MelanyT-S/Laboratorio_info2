@@ -197,6 +197,30 @@ codificaciones.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\practica_3.dir\build.make CMakeFiles/practica_3.dir/codificaciones.cpp.s
 .PHONY : codificaciones.cpp.s
 
+integracion.obj: integracion.cpp.obj
+.PHONY : integracion.obj
+
+# target to build an object file
+integracion.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practica_3.dir\build.make CMakeFiles/practica_3.dir/integracion.cpp.obj
+.PHONY : integracion.cpp.obj
+
+integracion.i: integracion.cpp.i
+.PHONY : integracion.i
+
+# target to preprocess a source file
+integracion.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practica_3.dir\build.make CMakeFiles/practica_3.dir/integracion.cpp.i
+.PHONY : integracion.cpp.i
+
+integracion.s: integracion.cpp.s
+.PHONY : integracion.s
+
+# target to generate assembly for a file
+integracion.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\practica_3.dir\build.make CMakeFiles/practica_3.dir/integracion.cpp.s
+.PHONY : integracion.cpp.s
+
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -237,6 +261,9 @@ help:
 	@echo ... codificaciones.obj
 	@echo ... codificaciones.i
 	@echo ... codificaciones.s
+	@echo ... integracion.obj
+	@echo ... integracion.i
+	@echo ... integracion.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

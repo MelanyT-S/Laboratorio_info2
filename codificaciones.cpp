@@ -4,7 +4,7 @@
 
 // IMPLEMENTACIÓN MÓDULO 5.1: RLE
 
-std::string comprimirRLE(const std::string& texto) {
+std::string comprimirRLE(const std::string& texto) { //declara y devuelve
     std::string comprimido = "";
     int n = texto.length();
 

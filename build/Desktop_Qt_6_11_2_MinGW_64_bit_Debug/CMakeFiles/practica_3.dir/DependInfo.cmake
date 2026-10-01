@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/melan/Documents/practica_3/codificaciones.cpp" "CMakeFiles/practica_3.dir/codificaciones.cpp.obj" "gcc" "CMakeFiles/practica_3.dir/codificaciones.cpp.obj.d"
+  "C:/Users/melan/Documents/practica_3/integracion.cpp" "CMakeFiles/practica_3.dir/integracion.cpp.obj" "gcc" "CMakeFiles/practica_3.dir/integracion.cpp.obj.d"
   "C:/Users/melan/Documents/practica_3/main.cpp" "CMakeFiles/practica_3.dir/main.cpp.obj" "gcc" "CMakeFiles/practica_3.dir/main.cpp.obj.d"
   )
 
